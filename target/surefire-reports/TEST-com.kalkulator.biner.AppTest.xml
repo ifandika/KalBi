@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.kalkulator.biner.AppTest" time="0.304" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.kalkulator.biner.AppTest" time="0.207" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/data/data/com.termux/files/usr/opt/openjdk/lib"/>
-    <property name="sun.java.command" value="/storage/emulated/0/Project/kalkulator-biner/target/surefire/surefirebooter10099075628995858376.jar /storage/emulated/0/Project/kalkulator-biner/target/surefire 2022-11-09T07-54-13_344-jvmRun1 surefire5903974536405632016tmp surefire_07805583720129698315tmp"/>
+    <property name="sun.java.command" value="/storage/emulated/0/Project/kalkulator-biner/target/surefire/surefirebooter12272877304869480037.jar /storage/emulated/0/Project/kalkulator-biner/target/surefire 2022-11-12T08-14-56_970-jvmRun1 surefire14793696489535503552tmp surefire_08872457125629479409tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/storage/emulated/0/Project/kalkulator-biner/target/test-classes:/storage/emulated/0/Project/kalkulator-biner/target/classes:/data/data/com.termux/files/home/.m2/repository/junit/junit/4.11/junit-4.11.jar:/data/data/com.termux/files/home/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/storage/emulated/0/Project/kalkulator-biner/target/surefire/surefirebooter10099075628995858376.jar"/>
+    <property name="surefire.real.class.path" value="/storage/emulated/0/Project/kalkulator-biner/target/surefire/surefirebooter12272877304869480037.jar"/>
     <property name="sun.management.compiler" value="HotSpot Tiered Compilers"/>
     <property name="java.runtime.version" value="17-internal+0-adhoc..src"/>
     <property name="user.name" value="u0_a242"/>
@@ -51,5 +51,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testApp" classname="com.kalkulator.biner.AppTest" time="0.01"/>
+  <testcase name="testApp" classname="com.kalkulator.biner.AppTest" time="0.009"/>
 </testsuite>
