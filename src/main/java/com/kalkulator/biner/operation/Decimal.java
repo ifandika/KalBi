@@ -2,6 +2,9 @@ package com.kalkulator.biner.operation;
 
 import java.util.*;
 
+/**
+ * Class yang berisi fungsi untuk konversi dari bilangan bulat/desimal ke biner,oktal,hexadesimal.
+ */
 public class Decimal {
 	
 	/**
