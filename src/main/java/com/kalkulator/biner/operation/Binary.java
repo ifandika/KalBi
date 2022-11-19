@@ -82,6 +82,11 @@ public class Binary {
 		return balik;
 	}
 	
+	// ×××××
+	private int[] calculateEachBinaryDigit() {
+		
+	}
+	
 	/**
 	 * 
 	 */
@@ -135,7 +140,29 @@ public class Binary {
 	 * 
 	 */
 	public String convertToHexa(byte[] val) {
-		return null;
+		if(val == null) return null;
+		int[] tempResult = new int[val.length];
+		int order = 0, rankResult = 0, indexTempResult = 0, temp = 0, group = 0;
+		for(int i = val.length-1; i >= 0; i--) {
+			if(val[i] == 0) {
+				tempResult[indexTempResult++] = 0;
+			} else {
+				rankResult = rankCalculate(order);
+				if(order == 0) {
+					tempResult[indexTempResult++] = 1;
+				} else {
+					// Langsung dimasukan tanpa perlu dikali, karena sama saja hasilnya 1 × n
+					temp = rankResult;
+					tempResult[indexTempResult++] = temp;
+				}
+			}
+			if(order == 3) {
+				order = 0;
+			} else {
+				order++;
+			}
+		}
+		return Arrays.toString(tempResult);
 	}
 	
 }
