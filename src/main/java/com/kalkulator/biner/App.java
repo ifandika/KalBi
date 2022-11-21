@@ -1,16 +1,10 @@
 package com.kalkulator.biner;
 
-import java.util.logging.Logger;
-import java.util.logging.Level;
-
 import com.kalkulator.biner.operation.*;
 
 public class App {
 	
-	private static Logger logger = Logger.getLogger(App.class.getName());
-	
 	public static void main( String[] args ) throws Exception {
-		logger.log(Level.INFO, "Memulai main class");
 		
 		Binary b = new Binary();
 		
@@ -21,6 +15,11 @@ public class App {
 		
 		System.out.println("b2: "+b.convertToOctal(new byte[] {
 				0, 1, 1, 0, 1
+			}
+		));
+		
+		System.out.println("b3: "+b.convertToHexa(new byte[] {
+				1, 0, 1, 1, 0, 0
 			}
 		));
 		

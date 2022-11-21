@@ -72,21 +72,6 @@ public class Binary {
 		return pangkat2;
 	}
 	
-	private byte[] balikNilai(byte[] value) {
-		if(value == null) return null;
-		byte[] balik = new byte[value.length];
-		int indexBalik = 0;
-		for(int i = value.length-1; i >= 0; i--) {
-			balik[indexBalik++] = value[i];
-		}
-		return balik;
-	}
-	
-	// ×××××
-	private int[] calculateEachBinaryDigit() {
-		
-	}
-	
 	/**
 	 * 
 	 */
@@ -139,21 +124,21 @@ public class Binary {
 	/**
 	 * 
 	 */
-	public String convertToHexa(byte[] val) {
+	public String convertToHexa(byte[] val) throws Exception {
 		if(val == null) return null;
 		int[] tempResult = new int[val.length];
-		int order = 0, rankResult = 0, indexTempResult = 0, temp = 0, group = 0;
+		int order = 0, rankResult = 0, temp = 0;
 		for(int i = val.length-1; i >= 0; i--) {
 			if(val[i] == 0) {
-				tempResult[indexTempResult++] = 0;
+				tempResult[i] = 0;
 			} else {
 				rankResult = rankCalculate(order);
 				if(order == 0) {
-					tempResult[indexTempResult++] = 1;
+					tempResult[i] = 1;
 				} else {
 					// Langsung dimasukan tanpa perlu dikali, karena sama saja hasilnya 1 × n
 					temp = rankResult;
-					tempResult[indexTempResult++] = temp;
+					tempResult[i] = temp;
 				}
 			}
 			if(order == 3) {
@@ -162,7 +147,54 @@ public class Binary {
 				order++;
 			}
 		}
-		return Arrays.toString(tempResult);
+		return hexaMergeProcess(tempResult);
 	}
+	
+	/**
+	 * "Fungsi untuk menjumlahkan setiap nilai, nilai ditambah dengan nilai selanjutnya sampai 4 kali,
+	 *	jika sudah 4 kali maka hasil dimasukan, lalu riset dan mulai lagi, jika hasil terdapat pada jangkauan
+	 *  10-15 maka diganti dengan data pada {alias}"
+	 * 
+	 *		Jika nilai kosong maka kembalian kosong. {tempResult} untuk tempat hasil setiap 4 kali penambahan. 
+	 * {alias} untuk hasil yang jangkauan 10-15 maka akan diganti dengan huruf. Variabel {temp} untuk wadah
+	 * sementara dari hasil setiap 4 perkalian, {group} untuk penanda jika sudah 4 kali/digit penambahan/operasi.
+	 * Perulangan dari batas nilai param hingga 0. Jika {group} modulo 4 sama dengan 0 kecuali {group} 0, cek jika
+	 * {temp} ada pada {alias} maka masukan data yang telah diganti pada {alias}, jika tidak maka langsung masukan.
+	 * lalu riset {group} dan {temp}. Setiap perulangan {group} ditambah 1, dan {temp} ditambah nilai saat ini.
+	 * Jika perulangan yang terakhir dan hasil belum 4 digit maka nilai {temp} langsung dimasukan. Kembalian nilai
+	 * dibalik dulu lalu di lemparkan:).
+	 */
+	private String hexaMergeProcess(int[] value) throws Exception {
+		if(value == null) return null;
+		StringBuilder tempResult = new StringBuilder();
+		Map alias = new HashMap<Integer, Character>();
+		alias.put(10, 'A');
+		alias.put(11, 'B');
+		alias.put(12, 'C');
+		alias.put(13, 'D');
+		alias.put(14, 'E');
+		alias.put(15, 'F');
+		int temp = 0, group = 0;
+		for(int i = value.length-1; i >= 0; i--) {
+			if(group % 4 == 0 && group != 0) {
+				if(alias.containsKey(temp)) {
+					tempResult.append(data.get(temp));
+				} else {
+					tempResult.append(temp);
+				}
+				group = 0;
+				temp = 0;
+			} 
+			group++;
+			temp += value[i];
+			// Hasil nilai akhir yang tidak genap 4 digit, lengsung dimasukan
+			if(i == 0) {
+				tempResult.append(temp);
+			}
+		}
+		return tempResult.reverse()
+										 .toString();
+	}
+	
 	
 }
