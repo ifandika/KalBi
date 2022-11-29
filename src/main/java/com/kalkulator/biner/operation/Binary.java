@@ -178,7 +178,7 @@ public class Binary {
 		for(int i = value.length-1; i >= 0; i--) {
 			if(group % 4 == 0 && group != 0) {
 				if(alias.containsKey(temp)) {
-					tempResult.append(data.get(temp));
+					tempResult.append(alias.get(temp));
 				} else {
 					tempResult.append(temp);
 				}

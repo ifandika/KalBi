@@ -1,40 +1,63 @@
 package com.kalkulator.biner;
 
+import java.util.*;
+
 import com.kalkulator.biner.operation.*;
 
 public class App {
 	
-	public static void main( String[] args ) throws Exception {
+	public static void main(String[] args) throws Exception {
 		
-		Binary b = new Binary();
-		
-		System.out.println("b1: "+b.convertToDecimal(new int[] {
+		System.out.println("=========");
+		Binary binary = new Binary();
+		System.out.println(
+			"Binary to Decimal -> "+
+			binary.convertToDecimal(new int[] {
 				1, 0, 0, 1, 0, 1, 1, 0
-			}
-		));
-		
-		System.out.println("b2: "+b.convertToOctal(new byte[] {
+			})
+		);
+		System.out.println(
+			"Binary to Octal -> "+
+			binary.convertToOctal(new byte[] {
 				0, 1, 1, 0, 1
-			}
-		));
+			})
+		);
+		System.out.println(
+			"Binary to Hexa -> "+
+			binary.convertToHexa(new byte[] {
+				1, 0, 1, 0, 1, 1
+			})
+		);
 		
-		System.out.println("b3: "+b.convertToHexa(new byte[] {
-				1, 0, 1, 1, 0, 0
-			}
-		));
+		System.out.println("=========");
+		Decimal dec = new Decimal();
+		System.out.println(
+			"Dec to Binary -> "+
+			Arrays.toString(dec.convertToBinary(150))
+		);
+		System.out.println(
+			"Dec to Octal -> "+
+			dec.convertToOctal(12570)
+		);
+		System.out.println(
+			"Dec to Hexa -> "+
+			dec.convertToHexa(30)
+		);
 		
-		Decimal d = new Decimal();
-		byte[] res = d.convertToBinary(150);
-		int res2 = d.convertToOctal(12570);
-		String hexa = d.convertToHexa(30);
-		System.out.println("Hexa: "+hexa);
-		System.out.println("octal: "+res2);
-		System.out.println();
-		for(var v : res) {
-			System.out.print(v+" ");
-		}
-		System.out.println();
-		
+		System.out.println("=========");
+		Hexadecimal hex = new Hexadecimal();
+		System.out.println(
+			"Hexa to Binary -> "+
+			Arrays.toString(hex.convertToBinary("2B"))
+		);
+		System.out.println(
+			"Hexa to Dec -> "+
+			hex.convertToDecimal("22B22")
+		);
+		System.out.println(
+			"Hexa to Octal ->"+
+			hex.convertToOctal("2CBF1")
+		);
 	}
 	
 }
