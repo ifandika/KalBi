@@ -21,3 +21,6 @@ Welcome to Kalkulator Biner - An application to perform number conversion operat
 
 ## • Support
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ifandika)
+
+[!["Saweria"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ifandika)
+https://saweria.co/ifandika
