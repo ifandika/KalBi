@@ -18,3 +18,6 @@ Welcome to Kalkulator Biner - An application to perform number conversion operat
 ## • Contributing
 
 <i>Comming Soon !!!</i>
+
+## • Support
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ifandika)
