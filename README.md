@@ -22,5 +22,4 @@ Welcome to Kalkulator Biner - An application to perform number conversion operat
 ## • Support
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ifandika)
 <!-- [!["Saweria"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ifandika) -->
-<th><a href="https://saweria.co/ifandika" target="_blank"><img src="https://img.shields.io/static/v1?label=Saweria&message=bebasid&color=FAAE2B" alt="Donasi BebasID Saweria"></a></th>
-<td><a href="https://saweria.co/ifandika" target="_blank"><img src="https://user-images.githubusercontent.com/26188697/180601310-e82c63e4-412b-4c36-b7b5-7ba713c80380.png" alt="Donasi Ifandika Saweria" height="72" width="313"></a></td>
+<td><a href="https://saweria.co/ifandika" target="_blank"><img src="https://user-images.githubusercontent.com/26188697/180601310-e82c63e4-412b-4c36-b7b5-7ba713c80380.png" alt="Donasi Ifandika Saweria" height="40" width="200"></a></td>
