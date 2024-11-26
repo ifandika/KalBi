@@ -24,6 +24,6 @@ Welcome to Kalkulator Biner - An application to perform number conversion operat
 <!-- [!["Saweria"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ifandika) -->
 <td>
 	<a href="https://saweria.co/ifandika" target="_blank">
-		<img src="https://user-images.githubusercontent.com/26188697/180601310-e82c63e4-412b-4c36-b7b5-7ba713c80380.png" alt="Donasi Ifandika Saweria" style="height: 35px; width: 180px; border-radius: 2px;">
+		<img src="https://user-images.githubusercontent.com/26188697/180601310-e82c63e4-412b-4c36-b7b5-7ba713c80380.png" alt="Donasi Ifandika Saweria" style="height: 35px; width: 170px; border-radius: 2px;">
 	</a>
 </td>
