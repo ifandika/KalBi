@@ -15,6 +15,15 @@ Welcome to Kalkulator Biner - An application to perform number conversion operat
 > [!Note]
 > - This application can work in online and offline conditions
 
+## • Download
+
+<b>Android</b>
+
+<b>Windows</b>
+
+<b>Java Maven</b>
+
+
 ## • Contributing
 
 <i>Comming Soon !!!</i>
